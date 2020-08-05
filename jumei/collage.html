@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.css" rel="stylesheet" />
+		<script src="js/mui.js"></script>
+		<script src="js/jquery-3.1.1.js"></script>
+		<script src="js/jquery.tmpl.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/collage.css" />
+
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div id="slider" class="mui-slider">
+				<div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<div class="mui-scroll">
+						<a class="mui-control-item mui-active" href="item1mobile">
+							推荐
+						</a>
+						<a class="mui-control-item" href="item2mobile">
+							美妆
+						</a>
+						<a class="mui-control-item" href="item3mobile">
+							母婴健康
+						</a>
+						<a class="mui-control-item" href="item4mobile">
+							内衣
+						</a>
+						<a class="mui-control-item" href="item5mobile">
+							女装
+						</a>
+						<a class="mui-control-item" href="item6mobile">
+							食物保健
+						</a>
+						<a class="mui-control-item" href="item7mobile">
+							饰品配饰
+						</a>
+						<a class="mui-control-item" href="item8mobile">
+							家居
+						</a>
+						<a class="mui-control-item" href="item9mobile">
+							数码家电
+						</a>
+						<a class="mui-control-item" href="item10mobile">
+							礼品箱包
+						</a>
+						<a class="mui-control-item" href="item11mobile">
+							鞋类
+						</a>
+						<a class="mui-control-item" href="item12mobile">
+							下期预告
+						</a>
+					</div>
+
+				</div>
+
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+
+					</div>
+					<script type="text/x-jquery-tmpl" id="collageInfo">
+							<div class="tuan">
+										<div class="comment">${comment}</div>
+										<img src="${image}"/>
+										<span>${num}</span>
+										<span>${functionl}</span>
+										<span>${desp}</span>
+									</div>
+								<ul class="tuan_ul">
+										<li>&yen;${discount}
+										<p>单价买&yen;${originalPr}</p>
+										</li>
+										<li style="color: white;">${purchase}</li>
+								</ul>
+					</script>
+
+				</div>
+			</div>
+
+		</div>
+		
+
+
+		<div class="mui-bar mui-bar-tab" id="footer">
+			<a href="index.html">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="active" href="collage.html">
+				<span class="mui-icon mui-icon-personadd"></span>
+				<span class="mui-tab-label">拼团</span>
+			</a>
+			<a href="shopcar.html">
+				<span class="mui-icon mui-icon-upload"></span>
+				<span class="mui-tab-label">购物车</span>
+			</a>
+			<a href="my.html">
+				<span class="mui-icon mui-icon-contact"></span>
+				<span class="mui-tab-label">我的</span>
+			</a>
+		</div>
+
+
+
+
+	</body>
+
+	<script>
+		//显示拼团所有信息
+		$.ajax({
+			type: "get",
+			url: "http://127.0.0.1:3000/goods/listCollage",
+			success: (res) => {
+				console.log(res.data)
+				$("#collageInfo").tmpl(res.data).appendTo("#item1mobile");
+			}
+		})
+	</script>
+</html>

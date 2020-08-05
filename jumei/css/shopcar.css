@@ -1,0 +1,119 @@
+.mui-table-view .mui-media-object{
+				max-width: 3.75rem;
+				height: 3.75rem;
+				line-height: 3.75rem;
+			}
+			/* .mui-content .mui-table-view li div input{
+				float: left;
+				margin-top: 0.25rem;
+			} */
+			.mui-content{
+				height: 93.75rem;
+			}
+			.mui-content .mui-table-view li div span{
+				float: left;
+			}
+			.mui-content .mui-table-view li a{
+				clear: both;
+				margin-top: 2.5rem;
+			}
+			.mui-content .mui-table-view li a input{
+				float: left;
+				transform: translateY(-10px);
+			}
+			.mui-content .mui-table-view li a input{
+				height: 5rem;
+			}
+			
+			.mui-content .mui-table-view li a .mui-media-body h5{
+				color: black;
+				text-overflow: ellipsis;
+				white-space: normal;
+				word-break: break-all;
+				line-clamp: 2;
+				width: 100%;
+				max-height: 2.5rem;
+			}
+			
+			.mui-content .mui-table-view li a .mui-media-body p:nth-child(2){
+				float: left;
+			}
+			.mui-content .mui-table-view li a .mui-media-body span{
+				float: right;
+				margin-left: 0.625rem;
+			}
+			.mui-content .mui-table-view li a .mui-media-body p:nth-child(6){
+				clear: both;
+				color: hotpink;
+				float: left;
+			}
+			.mui-content .mui-table-view li a .mui-media-body p:nth-child(7){
+				float: left;
+				color: hotpink;
+				
+			}
+			.mui-content .mui-table-view li a .mui-media-body p:nth-child(8){
+				clear: both;
+				color: hotpink;
+				float: right;
+			}
+			.mui-content .mui-table-view li a .mui-media-body p:nth-child(9){
+				
+				float: right;
+				color: hotpink;
+			}
+			
+			.mui-content .mui-table-view li a .mui-media-body p:last-child{
+				clear: both;
+				float: right;
+				color: black;
+			}
+			#balance{
+				bottom: 6.25rem;
+				position: fixed;
+				width: 100%;
+				height:3.75rem;
+				background-color: #fff;
+			}
+			#balance ul{
+				display: flex;
+				justify-content: space-between;
+			}
+			#balance ul li{
+				float: left;
+			}
+			
+			#balance ul li:first-child p{
+				float: left;
+				margin-left:0.625rem;
+				margin-top:1.25rem;
+			}
+			#balance ul li:first-child p:first-of-type{
+				color: black;	
+			}
+			#balance ul li:first-child p:last-of-type{
+				color: hotpink;
+			}
+			#balance ul li:first-child p:last-of-type span{
+				float: right;
+			}
+			#balance ul li:first-child  input{
+				float: left;
+				margin-top: 1.5rem;
+				margin-left: 0.625rem;
+			}
+			#balance ul li:last-child{
+				height: 3.125rem;
+				
+				width: 6.25rem;
+				border-radius: 1.25rem;
+				text-align: center;
+				background-color: hotpink;
+				margin-right: 0.625rem;
+				margin-top: 0.3125rem;
+			}
+			#balance ul li:last-child p{
+				margin-top: 0.625rem;
+				color: white;
+			}
+		

@@ -1,0 +1,109 @@
+header span{
+				line-height: 2.8125rem;
+			}
+			header a{
+				color: gray;
+			}
+			li{
+				list-style: none;
+			}
+			/* .mui-row{
+				border: 1px solid;
+			} */
+			.mui-content{
+				background-color: #fff;
+				height: 41.5625rem;
+			}
+			.mui-content .mui-row .mui-table-view-cell{
+				position: relative;
+				overflow: visible;
+			}
+			.mui-content .mui-row .mui-table-view-cell span{
+				display: block;
+				width: 6.25rem;
+				height: 0.0625rem;
+				border: 0.0625rem solid #CCCCCC;
+				margin-top: 0.625rem;
+				position: absolute;
+			}
+			.mui-content .mui-row div:first-of-type li span{
+				right: -1rem;
+				
+			}
+			.mui-content .mui-row div:last-of-type li span{
+				left: -1.625rem;
+			}
+			.mui-content .mui-row .mui-table-view-cell h4{
+				color: gray;
+				font-size: 0.625rem;
+			}
+			.mui-content .mui-input-group .mui-input-row{
+				/* margin-top: 20px; */
+			}
+			.mui-content .mui-input-group .mui-input-row:nth-child(2){
+				margin-top: 1.875rem;
+			}
+			.mui-content .mui-input-group .mui-input-row:nth-child(3){
+				margin-top: 1.875rem;
+			}
+			.mui-content .mui-input-group .mui-input-row input{
+				border-radius: 1.25rem;
+				 border: 0.0625rem solid gray;
+				 width: 80%;
+				 background-color: #f5f5f5;
+				 margin-left: 2.125rem;
+			}
+			
+			.mui-content .mui-input-group .mui-input-row:nth-child(2) .mui-btn-block{
+				margin-right: 1.875rem;
+				width: 20%;
+				border-radius: 1.25rem;
+				color: pink;
+				height: 2.1875rem;
+				padding: 0;
+				border-color: pink;
+			}
+			.mui-content .mui-input-group .mui-input-row::after,
+			.mui-content .mui-input-group::before,
+			.mui-content .mui-input-group::after{
+				
+				height: 0;
+			}
+			.mui-content .mui-input-group .mui-button-row .mui-btn-block{
+				border-radius: 0.625rem;
+				height: 1.875rem;
+				line-height: 1.875rem;
+				padding-top: 0;
+				width: 80%;
+				margin: 0 auto;
+				background-color: #f3b5c5;
+				color: white;
+				/* margin-top: 10px; */
+			}
+			.mui-content .mui-input-group .mui-row li a{
+				font-size: 0.875rem;
+				margin-left: 0.625rem;
+			}
+			.mui-content .mui-input-group .mui-row div:first-child li a{
+				color: red;
+			}
+			.mui-content .mui-input-group .mui-row div:last-child li a{
+				color: gray;
+			}
+			form{
+				height: 11.25rem;
+			}
+			.mui-input-row{
+				position: relative;
+				overflow: visible;
+			}
+			#check{
+				padding-top: 1.25rem;
+			}
+			label.error{
+				color: palevioletred;
+			    position: absolute;
+				margin-top: 2.1875rem;
+				left: 10%;
+				width: 40%;
+			 }

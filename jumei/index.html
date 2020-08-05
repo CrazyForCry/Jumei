@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="description" content="聚美优品是国内知名正品女性团购网站,也是领先的品牌化妆品团购和护肤品团购网,聚美优品团购化妆品每天有超值的化妆品和护肤品团购信息.">
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="//s1.jmstatic.com/templates/touch/css/i/touch-icon-57-precomposed.png">
+		<title>聚美优品触屏版</title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+		<script src="js/jquery-3.1.1.js"></script>
+		<script src="js/jquery.tmpl.js"></script>
+	</head>
+	<body>
+		
+		<header class="mui-bar mui-bar-nav">
+			<span>
+				<img src="images/search_btn.png" width="100%" />
+			</span>
+			<input type="search" class="mui-input-clear search" placeholder="搜索商品 分类 功效">
+			<span class="mui-pull-right">
+				<img src="images/search_list2.png" width="100%"/>
+			</span>
+		</header>
+		<div class="mui-content">
+				
+			<div id="slider" class="mui-slider">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<a class="mui-control-item" href="#item1mobile">
+						首页
+					</a>
+					<a class="mui-control-item" href="#item2mobile">
+						急速免税店
+					</a>
+					<a class="mui-control-item" href="#item3mobile">
+						母婴
+					</a>
+					<a class="mui-control-item" href="#item4mobile">
+						轻奢
+					</a>
+					<a class="mui-control-item" href="#item5mobile">
+						名品特卖
+					</a>
+				</div>
+				<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div class="mui-row">
+						        <div class="mui-col-sm-6 mui-col-xs-6">
+						            <li class="mui-table-view-cell">
+						                <a class="mui-pull-right" style="color: red;">
+						                   今日10点上新  
+						                </a>
+						            </li>
+						        </div>
+						        <div class="mui-col-sm-6 mui-col-xs-6" style="color: gray;">
+						            <li class="mui-table-view-cell">
+						                <a class="mui-pull-left">
+						                   明日10点预告
+						                </a>
+						            </li>
+						        </div>
+						</div>
+						<div>
+							<img src="images/5e6b4d86687e9_2048_710.jpg" width="100%">
+						</div>
+						<div>
+							<img src="images/5eddecda354d6_2048_710.jpg" width="100%">
+						</div>
+						<div class="m-shopdisplay">
+							<ul class="mui-table-view" id="indexList">
+								
+							</ul>
+							<script type="text/x-jquery-tmpl" id="indexInfo">
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;">
+										<img class="mui-media-object mui-pull-left" src="${image}" />
+										<div class="mui-media-body">
+											<h4>${title}</h4>
+											<p>&yen;${presentPr}</p>
+											<span>&yen;${originalPr}</span>
+											<p>${comment}</p>
+										</div>
+									</a>
+								</li>
+							</script>
+							<div>
+								<img src="images/5ee0856456f24_2048_710.jpg" width="100%">
+							</div>
+							<div>
+								<img src="images/5eda1346d5ed2_2048_710.jpg" width="100%">
+							</div>
+							<div>
+								<img src="images/5ef1b68896c1d_2048_710.jpg" width="100%">
+							</div>
+							<div>
+								<img src="images/5ef2fc4084d4f_2048_710.jpg" width="100%">
+							</div>
+							<div style="margin: 0 0.625rem;">
+								<img src="images/footer_bg.jpg" alt="" width="100%" />
+							</div>
+							<div class="mui-row">
+							        <div class="mui-col-sm-6 mui-col-xs-6">
+							            <li class="mui-table-view-cell">
+							                <span class="mui-pull-right" style="color: hotpink;border: 0.0625rem solid #CCCCCC;border-radius: 0.625rem;width: 5rem;text-align: center;">触屏版</span>
+							            </li>
+							        </div>
+							        <div class="mui-col-sm-6 mui-col-xs-6">
+							            <li class="mui-table-view-cell">
+							               <span class="mui-pull-left" style="border: 0.0625rem solid #CCCCCC;border-radius: 0.625rem;width: 5rem;text-align: center;">电脑版</span>
+							            </li>
+							        </div>
+							</div>
+							<div style="text-align: center;">
+								<p>©2016 聚美优品 Jumei.com</p>
+							</div>
+						</div>
+						
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content mui-active">
+						<ul class="mui-table-view m-bar">
+							<li class="mui-col-xs-3">
+								<img src="images/interantion_shipping.png"  />
+								<p>海外直供</p>
+							</li>
+							<li class="mui-col-xs-3">
+								<img src="images/genuine_guarantee.png" />
+								<p>原装正品</p>
+							</li>
+							<li class="mui-col-xs-3">
+								<img src="images/global_delivery.png" />
+								<p>极速到货</p>
+							</li>
+							<li class="mui-col-xs-3">
+								<img src="images/return_guarantee_7.png" />
+								<p>轻松退货</p>
+							</li>
+						</ul>
+						<div class="mui-row">
+						        <div class="mui-col-sm-6 mui-col-xs-6 ">
+						            <li class="mui-table-view-cell mui-pull-right">
+						                <a>
+						                    <img src="images/icon_title.png"  height="25px" />
+						                </a>
+						            </li>
+						        </div>
+						        <div class="mui-col-sm-6 mui-col-xs-6">
+						            <li class="mui-table-view-cell">
+						                <a class="mui-pull-left">
+						                    今日团购	
+						                </a>
+						            </li>
+						        </div>
+						</div>
+						<div class="m-details">
+							<ul class="mui-table-view" id="listGroupBuy">
+								
+								
+							</ul>
+							<script type="text/x-jquery-tmpl" id="GroupBuyInfo">
+								<li class="mui-table-view-cell mui-media groupbuy" loc="${id}">
+									<a href="javascript:;">
+										<img class="mui-media-object mui-pull-left" src="${image}" />
+										<div class="mui-media-body">
+											<h4>${title}</h4>
+											<p>&yen;${presentPr}</p>
+											<span>&yen;${originalPr}</span>
+										</div>
+									</a>
+								</li>
+							</script>
+							<div>
+								<img src="images/5ef321b2678cc_2048_710.jpg" width="100%">
+							</div>
+							<div>
+								<img src="images/5ef1b2d91c38d_2048_710.jpg" width="100%">
+							</div>
+							<div style="margin: 0 0.625rem;">
+								<img src="images/footer_bg.jpg" alt="" width="100%" />
+							</div>
+							<div class="mui-row">
+							        <div class="mui-col-sm-6 mui-col-xs-6">
+							            <li class="mui-table-view-cell">
+							                <span class="mui-pull-right" style="color: hotpink;border: 0.0625rem solid #CCCCCC;border-radius: 0.625rem;width: 5rem;text-align: center;">触屏版</span>
+							            </li>
+							        </div>
+							        <div class="mui-col-sm-6 mui-col-xs-6">
+							            <li class="mui-table-view-cell">
+							               <span class="mui-pull-left" style="border: 0.0625rem solid #CCCCCC;border-radius: 0.625rem;width: 5rem;text-align: center;">电脑版</span>
+							            </li>
+							        </div>
+							</div>
+							<div style="text-align: center;">
+								<p>©2016 聚美优品 Jumei.com</p>
+							</div>
+						</div>
+						
+					</div>
+					<div id="item3mobile" class="mui-slider-item mui-control-content mui-active">
+						<div class="mui-row">
+						        <div class="mui-col-sm-6 mui-col-xs-6 ">
+						            <li class="mui-table-view-cell mui-pull-right">
+						                <a>
+						                    <img src="images/icon_title.png"  height="25px" />
+						                </a>
+						            </li>
+						        </div>
+						        <div class="mui-col-sm-6 mui-col-xs-6">
+						            <li class="mui-table-view-cell">
+						                <a class="mui-pull-left">
+						                    全球热销品牌	
+						                </a>
+						            </li>
+						        </div>
+						</div>
+						<ul class="mui-table-view" style="display: flex;justify-content: space-around;flex-wrap: wrap;background-color: #fff;">
+							<li class="mui-col-xs-3">
+								<img src="images/item_2386_512_512-ipad2048_1502086238.jpeg"  />
+							</li>
+							<li class="mui-col-xs-3">
+								<img src="images/item_2386_512_512-ipad2048_1588844663.png" />
+							</li>
+							<li class="mui-col-xs-3">
+								<img src="images/item_2386_512_512-ipad2048_1498543566.jpeg"  />
+							</li>
+							<li class="mui-col-xs-3">
+								<img src="images/item_2386_512_512-ipad2048_1551235310.jpeg"  />
+							</li>
+							<li class="mui-col-xs-3">
+								<img src="images/item_2386_512_512-ipad2048_1548056454.jpeg"  />
+							</li>
+							<li class="mui-col-xs-3">
+								<img src="images/item_2386_512_512-ipad2048_1563960647.jpeg"  />
+							</li>
+							<li class="mui-col-xs-3">
+								<img src="images/item_2386_512_512-ipad2048_1548055217.png"  />
+							</li>
+							<li class="mui-col-xs-3">
+								<img src="images/item_2386_512_512-ipad2048_1548055580.jpeg"  />
+							</li>
+						</ul>
+						<div class="mui-row">
+						        <div class="mui-col-sm-6 mui-col-xs-6 ">
+						            <li class="mui-table-view-cell mui-pull-right">
+						                <a>
+						                    <img src="images/icon_title.png"  height="25px" alt=""/>
+						                </a>
+						            </li>
+						        </div>
+						        <div class="mui-col-sm-6 mui-col-xs-6">
+						            <li class="mui-table-view-cell">
+						                <a class="mui-pull-left">
+						                    疯抢专场早10点上新
+						                </a>
+						            </li>
+						        </div>
+						</div>
+						<ul class="mui-table-view" id="listRushBuy">
+							
+						</ul>
+						<script type="text/x-jquery-tmpl" id="RushBuyInfo">
+							<li class="mui-table-view-cell">
+								<p>${desp}</p>
+								<img src="${bigimg}" alt="" /> 
+								<div class="mui-pull-left">
+									<h4>${title}</h4>
+									<p>${time}</p>
+								</div>
+								<div class="mui-pull-right">
+									<img src="${smallimg}" alt=""  />
+								</div>
+							</li>
+						</script>
+						<div style="margin: 0 0.625rem;">
+							<img src="images/footer_bg.jpg" alt="" width="100%" />
+						</div>
+						<div class="mui-row">
+						        <div class="mui-col-sm-6 mui-col-xs-6">
+						            <li class="mui-table-view-cell">
+						                <span class="mui-pull-right" style="color: hotpink;border: 0.0625rem solid #CCCCCC;border-radius: 0.625rem;width: 5rem;text-align: center;">触屏版</span>
+						            </li>
+						        </div>
+						        <div class="mui-col-sm-6 mui-col-xs-6">
+						            <li class="mui-table-view-cell">
+						               <span class="mui-pull-left" style="border: 0.0625rem solid #CCCCCC;border-radius: 0.625rem;width: 5rem;text-align: center;">电脑版</span>
+						            </li>
+						        </div>
+						</div>
+						<div>
+							<p style="margin-left: 26%;">©2016 聚美优品 Jumei.com</p>
+						</div>
+					</div>
+					<div id="item4mobile" class="mui-slider-item mui-control-content mui-active">
+						<div class="mui-row">
+						        <div class="mui-col-sm-6 mui-col-xs-6 ">
+						            <li class="mui-table-view-cell mui-pull-right">
+						                <a class="mui-navigate-right">
+						                    <img src="images/icon_title.png"  height="25px" />
+						                </a>
+						            </li>
+						        </div>
+						        <div class="mui-col-sm-6 mui-col-xs-6">
+						            <li class="mui-table-view-cell">
+						                <a class="mui-navigate-right mui-pull-left">
+						                    今日特惠
+						                </a>
+						            </li>
+						        </div>
+						</div>
+						<div>
+							<img src="images/item_1654_2048_1024-ipad2048_1592562078.jpeg" width="100%">
+						</div>
+						<div>
+							<img src="images/item_1654_2048_1024-ipad2048_1592562052.jpeg" width="100%">
+						</div>
+						<div class="mui-row">
+						        <div class="mui-col-sm-6 mui-col-xs-6 ">
+						            <li class="mui-table-view-cell mui-pull-right">
+						                <a class="mui-navigate-right">
+						                    <img src="images/icon_title.png"  height="25px" alt=""/>
+						                </a>
+						            </li>
+						        </div>
+						        <div class="mui-col-sm-6 mui-col-xs-6">
+						            <li class="mui-table-view-cell">
+						                <a class="mui-navigate-right mui-pull-left">
+						                    精选活动
+						                </a>
+						            </li>
+						        </div>
+						</div>
+						<ul class="mui-table-view" id="listHotActivities">
+							
+						</ul>
+						<script type="text/x-jquery-tmpl" id="HotActivitiesInfo">
+							<li class="mui-table-view-cell">
+								<p>${desp}</p>
+								<img src="${bigimg}" alt="" /> 
+								<div class="mui-pull-left">
+									<h4>${title}</h4>
+									<p>${time}</p>
+								</div>
+								<div class="mui-pull-right">
+									<img src="${smallimg}" alt=""  />
+								</div>
+							</li>
+						</script>
+						<div style="margin: 0 0.625rem;">
+							<img src="images/footer_bg.jpg" alt="" width="100%" />
+						</div>
+						<div class="mui-row">
+						        <div class="mui-col-sm-6 mui-col-xs-6">
+						            <li class="mui-table-view-cell">
+						                <span class="mui-pull-right" style="color: hotpink;border: 0.0625rem solid #CCCCCC;border-radius: 0.625rem;width: 5rem;text-align: center;">触屏版</span>
+						            </li>
+						        </div>
+						        <div class="mui-col-sm-6 mui-col-xs-6">
+						            <li class="mui-table-view-cell">
+						               <span class="mui-pull-left" style="border: 0.0625rem solid #CCCCCC;border-radius: 0.625rem;width: 5rem;text-align: center;">电脑版</span>
+						            </li>
+						        </div>
+						</div>
+						<div>
+							<p style="margin-left: 26%;">©2016 聚美优品 Jumei.com</p>
+						</div>
+					</div>
+					<div id="item5mobile" class="mui-slider-item mui-control-content mui-active">
+						<ul class="mui-table-view" id="listFamousBrand">
+							
+							
+						</ul>
+						<script type="text/x-jquery-tmpl" id="FamousBrandInfo">
+							<li class="mui-table-view-cell">
+								<p>${desp}</p>
+								<img src="${bigimg}" alt="" /> 
+								<div class="mui-pull-left">
+									<h4>${title}</h4>
+									<p>${time}</p>
+								</div>
+								<div class="mui-pull-right">
+									<img src="${smallimg}" alt=""  />
+								</div>
+							</li>
+						</script>
+						<div style="margin: 0 0.625rem;">
+							<img src="images/footer_bg.jpg" alt="" width="100%" />
+						</div>
+						<div class="mui-row">
+						        <div class="mui-col-sm-6 mui-col-xs-6">
+						            <li class="mui-table-view-cell">
+						                <span class="mui-pull-right" style="color: hotpink;border: 0.0625rem solid #CCCCCC;border-radius: 0.625rem;width: 5rem;text-align: center;">触屏版</span>
+						            </li>
+						        </div>
+						        <div class="mui-col-sm-6 mui-col-xs-6">
+						            <li class="mui-table-view-cell">
+						               <span class="mui-pull-left" style="border: 0.0625rem solid #CCCCCC;border-radius: 0.625rem;width: 5rem;text-align: center;">电脑版</span>
+						            </li>
+						        </div>
+						</div>
+						<div style="text-align: center;">
+							<p>©2016 聚美优品 Jumei.com</p>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+		<div class="mui-bar mui-bar-tab" id="footer">
+			<a class="active" href="index.html">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a href="collage.html">
+				<span class="mui-icon mui-icon-personadd"></span>
+				<span class="mui-tab-label">拼团</span>
+			</a>
+			<a href="shopcar.html">
+				<span class="mui-icon mui-icon-upload"></span>
+				<span class="mui-tab-label">购物车</span>
+			</a>
+			<a href="my.html">
+				<span class="mui-icon mui-icon-contact"></span>
+				<span class="mui-tab-label">我的</span>
+			</a>
+		</div>
+
+	</body>
+	<script>
+		$("#listGroupBuy").on("tap",".groupbuy",function(){
+			 var id1 = $(this).attr("loc");
+			window.location.href="shopdetail.html?id="+id1;
+			console.log(id1)
+		})
+		
+		//显示首页所有信息
+		$.ajax({
+			type:"get",
+			url:"http://127.0.0.1:3000/goods/listIndex",
+			success:(res)=>{
+				$("#indexInfo").tmpl(res.data).appendTo("#indexList");
+			}
+		})
+		//显示团购所有信息
+		$.ajax({
+			type:"get",
+			url:"http://127.0.0.1:3000/goods/listGroupBuy",
+			success:(res)=>{
+				$("#GroupBuyInfo").tmpl(res.data).appendTo("#listGroupBuy");
+			}
+		})
+		//显示抢购所有信息
+		$.ajax({
+			type:"get",
+			url:"http://127.0.0.1:3000/goods/listRushBuy",
+			success:(res)=>{
+				$("#RushBuyInfo").tmpl(res.data).appendTo("#listRushBuy");
+			}
+		})
+		//显示精选活动所有信息
+		$.ajax({
+			type:"get",
+			url:"http://127.0.0.1:3000/goods/listHotActivities",
+			success:(res)=>{
+				$("#HotActivitiesInfo").tmpl(res.data).appendTo("#listHotActivities");
+			}
+		})
+		//显示名品特卖所有信息
+		$.ajax({
+			type:"get",
+			url:"http://127.0.0.1:3000/goods/listFamousBrand",
+			success:(res)=>{
+				$("#FamousBrandInfo").tmpl(res.data).appendTo("#listFamousBrand");
+			}
+		})
+			
+		
+	</script>
+</html>

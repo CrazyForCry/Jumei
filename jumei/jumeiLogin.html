@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>登陆</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/jumeiLogin.css"/>
+		<script src="js/jquery-3.1.1.js"></script>
+		<script src="js/Sliding_Validation_Gu.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="js/mui.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</head>
+		
+	<body>
+		<!-- <form > -->
+			<header class="mui-bar mui-bar-nav">
+				<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+				<h1 class="mui-title">登陆</h1>
+				<span class="mui-pull-right" id="register">注册</span>
+			</header>
+			<div class="mui-content">
+				<div class="mui-row">
+				        <div class="mui-col-sm-6 mui-col-xs-4">
+				            <li class="mui-table-view-cell">
+				               <span class="mui-pull-right"></span>
+				            </li>
+				        </div>
+						<div class="mui-col-sm-6 mui-col-xs-4">
+							<li class="mui-table-view-cell">
+							   <h4>使用聚美账号登陆</h4>
+							</li>
+						</div>
+				        <div class="mui-col-sm-6 mui-col-xs-4">
+				            <li class="mui-table-view-cell">
+				                <span class="mui-pull-left"></span>
+				            </li>
+				        </div>
+				    </div>
+					<form class="mui-input-group">
+					    <div class="mui-input-row">
+					    <input type="text" class="mui-input-clear" id="username" name="username" placeholder="已注册的手机号/邮箱/用户名">
+					    </div>
+					    <div class="mui-input-row">
+					        <input type="password" id="password" name="password"   placeholder="6-16位登录密码">
+					    </div>
+						<div id="check"></div>
+						<div class="mui-row">
+						        <div class="mui-col-sm-6 mui-col-xs-6">
+						            <li class="mui-table-view-cell">
+						              <a href="telLogin.html">使用手机短信码登陆</a>
+						            </li>
+						        </div>
+						        <div class="mui-col-sm-6 mui-col-xs-6">
+						            <li class="mui-table-view-cell">
+						               <a href="javascript:;">忘记密码？</a>
+						            </li>
+						        </div>
+						    </div>
+					    <div class="mui-button-row">
+					        <button type="submit" id="btn" class="mui-btn mui-btn-block" >登陆</button>
+					    </div>
+					</form>
+					
+			</div>
+		<!-- </form> -->
+		
+	</body>
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script>
+	
+    $(function () {
+        $("form").validate({
+            submitHandler:function (form) {
+                let name = $("#username").val();
+                let pass = $("#password").val();
+				console.log(name,pass)
+				if(flag){
+					$.ajax({
+						type:"post",
+						url:"http://127.0.0.1:3000/users/loginjm",
+						data:{username:name,password:pass},
+						success:(res)=>{
+							if (res.errNo==0){
+								alert(res.message);
+								localStorage.setItem("user14",JSON.stringify(res.data));
+								window.location.href ="index.html"
+							}else {
+								alert(res.message);
+							}
+						},
+						error:(err)=>{
+							alert(err);
+						}
+					})
+				}else{
+					alert("请重新验证");
+				} 
+            },
+            rules:{
+                phone:{
+                    required:true
+                },
+                password:{
+                    required: true,
+                    rangelength:[2,5]
+                }
+            },
+            messages:{
+                phone:{
+                    required:"用户名不能为空"
+                },
+                password:{
+                    required: "密码不能为空",
+                    rangelength: "请输入密码的位数{0} 到 {1}位"
+                }
+            }
+        })
+    })
+	
+</script>	
+<script>
+	$("#register").click(function(){
+		window.location.href = "register.html";
+	})
+	var sliding_validation = SlidingValidation.create($('#check'),{},function(){});
+	$("#check").css({
+		marginLeft:"32px",
+		marginTop:"10px"
+	})
+</script>
+</html>

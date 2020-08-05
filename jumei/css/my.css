@@ -1,0 +1,199 @@
+/* header 开始 */
+header a,.mui-title {
+	color: white;
+}
+header {
+	background-image: linear-gradient(to right bottom, #fd4968, #fc5b97);
+}
+
+.head-right {
+	position: absolute;
+	right: 0;
+	top: 5px;
+	width: 32px;
+	height: 32px;
+	background: url(../images/89ea87200c623f4c7809f21f2ab4bce8.png) center center no-repeat;
+	background-size: 24px 24px;
+
+}
+
+/* header 结束 */
+
+/* mui-content 开始 */
+.mui-content {
+	height: 900px;
+	width: 100%;
+}
+	
+	/* my 开始 */
+		.m-my{
+			font-size: 18px;
+			font-weight: bolder;
+			color: white;
+			background-image: linear-gradient(to right bottom, #fd4968, #fc5b97);
+		}
+		.m-my img{
+			margin-top: 5px;
+			margin-left: 40%;
+		}
+		
+	/* my 结束 */
+	
+	/* myorder 开始 */
+
+	#myorder {
+		margin-top: 20px;
+	}
+
+	#myorder .mui-table-view .mui-media-object {
+		width: 20px;
+		height: 20px;
+		margin-top: 10px;
+	}
+
+	#myorder .mui-table-view .mui-media-body p {
+		width: 150px;
+		font-size: 16px;
+		color: black;
+		float: left;
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+	#myorder .mui-table-view .mui-media-body span {
+		color: gray;
+		display: block;
+		float: right;
+		margin-top: 10px;
+	}
+
+	#myorder .mui-table-view .mui-media-body span:first-of-type {
+		float: left;
+	}
+
+	/* myorder 结束 */
+
+	/* orderNav 开始 */
+
+	#orderNav {
+		width: 100%;
+		height: 70px;
+		position: relative;
+	}
+
+	#orderNav nav {
+		display: flex;
+		justify-content: space-around;
+		text-align: center;
+		position: absolute;
+		z-index: 1;
+		top: 0px;
+		left: 0;
+		height: 70px;
+	}
+
+	#orderNav nav a span:first-of-type {
+		margin-top: 10px;
+	}
+
+	#orderNav nav a span:last-of-type {
+		color: gray;
+	}
+
+	/* orderNav 结束 */
+
+	/* myfund开始 */
+
+	#myfund {
+		margin-top: 20px;
+	}
+
+	#myfund .mui-table-view .mui-media-object {
+		width: 20px;
+		height: 20px;
+		margin-top: 10px;
+	}
+
+	#myfund .mui-table-view .mui-media-body p {
+		width: 150px;
+		font-size: 16px;
+		color: black;
+		float: left;
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+
+	/* myfund结束 */
+
+	/* fundNav开始 */
+
+	#fundNav {
+		width: 100%;
+		height: 40px;
+		position: relative;
+		margin-bottom: 20px;
+	}
+
+	#fundNav .mui-bar,
+	#fundNav .mui-bar-tab {
+		display: flex;
+		justify-content: space-around;
+		text-align: center;
+		position: absolute;
+		z-index: 1;
+		top: 0px;
+		left: 0;
+		height: 40px;
+	}
+
+	#fundNav nav a {
+		height: 20px;
+	}
+
+	#fundNav nav a span {
+		margin-top: 10px;
+		color: gray;
+	}
+
+	/* fundNav结束 */
+
+	/* other 开始*/
+	#other .mui-table-view .mui-media-object {
+		width: 20px;
+		height: 20px;
+		margin-top: 10px;
+	}
+
+	#other .mui-table-view .mui-media-body p {
+		width: 150px;
+		font-size: 16px;
+		color: black;
+		float: left;
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+	#other .mui-table-view .mui-media-body span {
+		color: #CCCCCC;
+		display: block;
+		margin-top: 10px;
+
+	}
+
+	/* other 结束*/
+
+	/* tips 开始*/
+	.m-tips {
+		margin-top: 10px;
+		margin-left: 20px;
+
+	}
+
+	.m-tips p {
+		font-size: 13px;
+	}
+
+	/* tips 结束*/
+
+/* mui-content 结束 */

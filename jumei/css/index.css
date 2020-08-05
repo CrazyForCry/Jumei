@@ -1,0 +1,169 @@
+#sliderProgressBar{
+				width: 20%;
+			}
+			header{
+				position: relative;
+			}
+			header .mui-input-clear{
+				width: 90%;
+				position: relative;
+			}
+			header span:first-of-type{
+				left: 1.25rem;
+				top: 0.9375rem;
+			}
+			header span{
+				display: block;
+				width: 1.5625rem;
+				height: 1.5625rem;
+				position: absolute;
+				top: 0.9375rem;
+			}
+			header span:last-of-type{
+				right: 0.625rem;
+			}
+			#sliderSegmentedControl .mui-control-item{
+				font-size: 0.875rem;
+			}
+			
+			.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+				color: hotpink;
+			}
+			.mui-segmented-control.mui-segmented-control-inverted~.mui-slider-progress-bar{
+				background-color: hotpink;
+			}
+			.mui-content{
+				height: 3400px;
+				overflow: hidden;
+			}
+			#item1mobile .m-shopdisplay{
+				margin-top: 0.625rem;
+			}
+			
+			#item1mobile .m-shopdisplay .mui-table-view-cell>a:not(.mui-btn){
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				height: 100%;
+				white-space: normal;
+			}
+			#item1mobile .m-shopdisplay ul li a img{
+				height: 100%;
+				padding-left: 1.25rem;
+			}
+			#item1mobile .m-shopdisplay .mui-table-view .mui-media-object {
+				line-height: 4.375rem;
+				max-width: 4.375rem;
+				height: 4.375rem;
+			}
+			#item1mobile .m-shopdisplay .mui-media-body h4{
+				font-size: 0.75rem;
+				font-weight: normal;
+			}
+			#item1mobile .m-shopdisplay .mui-media-body p:first-of-type{
+				color: hotpink;	
+			}
+			#item1mobile .m-shopdisplay .mui-media-body p:first-of-type,.m-shopdisplay .mui-media-body span{
+				float: left;
+				margin-top: 0.9375rem;
+			}
+			#item1mobile .m-shopdisplay .mui-media-body span{
+			
+				text-decoration: line-through;
+				color: gray;
+				font-size: 0.75rem;
+			}
+			#item1mobile .m-shopdisplay .mui-media-body p:last-of-type{
+				clear: both;
+				color:gray;
+			}
+			#item2mobile .m-bar{
+				display: flex;
+				justify-content: space-around;
+				text-align: center;
+				padding-top: 0.625rem;
+			}
+			#item2mobile .m-bar li{
+				margin:0 1.5625rem 0 0.625rem;
+			}
+			#item2mobile .m-bar li img{
+				width: 2.5rem;
+			}
+			#item2mobile .m-bar li:last-child{
+				margin-right: 0.625rem;
+			}
+			
+			#item2mobile .mui-table-view .mui-media-object {
+			    line-height: 3.75rem;
+			    max-width: 3.75rem;
+			    height: 3.75rem;
+			}
+			#item2mobile .m-details .mui-table-view li a .mui-media-body{
+				margin-left: 25%;
+			}
+			#item2mobile .m-details .mui-table-view li a .mui-media-body h4{
+				width: 100%;
+				white-space: normal;
+				font-size: 1rem;
+			}
+			#item2mobile .m-details .mui-table-view li a .mui-media-body p{
+				float: left;
+				color: hotpink;
+			}
+			
+			#item2mobile .m-details .mui-table-view li a .mui-media-body span{
+				float: left;
+				margin-left: 0.625rem;
+				text-decoration: line-through;
+				color: gray;
+			}
+			#item2mobile{
+				height: 700px;
+			}
+			#item4mobile{
+				height: 3300px;
+			}
+			#item5mobile{
+				height: 2400px;
+			}
+			#item2mobile .mui-row div li a,
+			#item4mobile .mui-row div li a,
+			#item3mobile .mui-row div li a{
+				color: hotpink;
+			}
+			#item3mobile .mui-row div li{
+				transform: translateX(-1.25rem);
+			}
+			#item5mobile ul li .mui-pull-right,
+			#item4mobile ul li .mui-pull-right,
+			#item4mobile ul li .mui-pull-right{
+				width: 50%;
+				height: 1.5625rem;
+			}
+			#item5mobile ul li .mui-pull-right img,
+			#item4mobile ul li .mui-pull-right img,
+			#item3mobile ul li .mui-pull-right img
+			{
+				width: 50%;
+				
+				float: right;
+			}
+			#item5mobile ul li div h4,
+			#item4mobile ul li div h4,
+			#item3mobile ul li{
+				font-size: 0.875rem;
+			}
+			#item5mobile ul li,
+			#item4mobile ul li,
+			#item3mobile ul li{
+				position: relative;
+			}
+			#item5mobile ul li p:first-child,
+			#item4mobile ul li p:first-child,
+			#item3mobile ul li p:first-child{
+				color: white;
+				position: absolute;
+				background-color: black;
+				bottom: 6.875rem;
+				font-size: 0.625rem;
+			}
